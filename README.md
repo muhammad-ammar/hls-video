@@ -14,7 +14,7 @@ git clone https://github.com/muhammad-ammar/hls-video.git
 
 ```python video.py --dir '~/Documents/hls_videos' --port 8989```
 
-Now the video server is running. Visit http://127.0.0.1:8989/ and uou should see all the files inside the directroy. Right click on an `m3u8` file and click on `Copy Link Address`.
+Now the video server is running. Visit http://127.0.0.1:8989/ and you should see all the files inside the directroy. Right click on a `m3u8` file and click on `Copy Link Address`.
 
 **Play HLS Videos**
 
