@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+            body {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center; /* center align the body along x-axis */
+                align-items: center; /* center align the body along y-axis */
+            }
+            .video-input {
+                display: flex;
+                margin-bottom: 10px;
+            }
+            .video-input input {
+                flex: 1;
+                height: 30px;
+                margin-right: 5px;
+            }
+            .video-input button {
+                border: 0;
+                background: dodgerblue;
+                box-shadow: none;
+                border-radius: 0px;
+                font-size: small;
+                font-weight: 500;
+            }
+        </style>
+        <title>HLS Player</title>
+        <script src="https://cdn.jsdelivr.net/npm/hls.js@latest" defer></script>
+        <script src="hls_setup.js" defer></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="video-input">
+                <input id="video-url" type="text" placeholder="Enter a video HLS video url and click Play Video button">
+                <button onclick="setupVideo()">Play Video</button>
+            </div>
+            <div>
+                <video id="video" controls width="700"></video>
+            </div>
+        </div>
+    </body>
+</html>
